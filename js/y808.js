@@ -4,8 +4,6 @@ $(document).ready(function(){
 	var player;
 	var lplayer;
 function loadYt(){
-
-
 	var tag = document.createElement('script');
 	tag.src = "http://www.youtube.com/player_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -27,6 +25,14 @@ function onYouTubePlayerAPIReady() {
 		videoId: 'JW5meKfy3fY',
 		events: {
 		'onReady': onPlayerReady2
+		}
+	});
+	player = new YT.Player('test3', {
+		height: '190',
+		width: '240',
+		videoId: 'n7gfb301eho',
+		events: {
+		'onReady': onPlayerReady
 		}
 	});
 }
